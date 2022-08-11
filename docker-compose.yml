@@ -1,0 +1,16 @@
+version: '3'
+services:
+  mongo:
+    image: mongo:5.0
+    container_name: mongo-container
+    restart: always
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin
+    ports:
+      - 27018:27017
+    volumes:
+      - ./mongo-data-5.0:/data/db
+    command: --wiredTigerCacheSizeGB 1.5
+
+
