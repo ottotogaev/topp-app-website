@@ -2,6 +2,9 @@
 /dist
 /node_modules
 
+/mongo-data-5.0
+
+.env
 # Logs
 logs
 *.log
