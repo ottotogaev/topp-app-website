@@ -10,7 +10,7 @@ services:
     ports:
       - 27018:27017
     volumes:
-      - ./mongo-data-5.0:/data/db
+      - ./mongo-data-5.0.0:/data/db
     command: --wiredTigerCacheSizeGB 1.5
 
 
