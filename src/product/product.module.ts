@@ -8,7 +8,7 @@ import { ProductController } from './product.controller';
       {
         typegooseClass: ProductModule,
         schemaOptions: {
-          collection: 'Product'
+          collection: 'product'
         }
       }
     ])
